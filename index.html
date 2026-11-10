@@ -23,9 +23,25 @@
 .filter{font-size:11px;padding:10px 12px}
 }
 @media(max-width:375px){.nav-logo{width:94px}.navlinks a{font-size:9px;padding:9px 8px}.hero{padding-top:112px}}
+</style><style id="hero-product-art">
+.hero{min-height:680px;height:88svh;max-height:1020px;background:linear-gradient(#ffffff12,#ffffff28),url("CRACKL%20background3.png") center/cover no-repeat}
+.hero-inner{width:min(900px,94vw);padding-top:110px}
+.hero-logo{width:min(430px,56vw);margin:0 auto}
+.hero-art{position:relative;width:min(720px,77vw);height:clamp(290px,44vh,520px);margin:-8px auto 0;display:grid;place-items:center}
+.hero-art img{width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 22px 22px #7433a64d)}
+.hero-art:not(.loaded){height:clamp(120px,20vh,210px)}
+.hero-bottom{bottom:24px}
+@media(max-width:700px){
+.hero{min-height:0;height:auto;max-height:none;padding:112px 14px 38px}
+.hero-inner{width:100%;padding:0}
+.hero-logo{width:min(310px,76vw)}
+.hero-art{width:min(100%,450px);height:clamp(290px,92vw,480px);margin:12px auto 0}
+.hero-art:not(.loaded){height:100px}
+.hero-bottom{position:static;margin:12px auto 0}
+}
 </style></head><body>
 <header class="nav"><a href="#" aria-label="CRACKL home"><img class="nav-logo" src="crackl_kawaii%20logo3.png" alt="CRACKL"></a><nav class="navlinks" aria-label="Main navigation"><a href="#collection">THE COLLECTION</a><a href="#collection">THE TOYS</a><a href="#create">MAKE YOUR OWN</a></nav></header>
-<main><section class="hero" aria-label="Welcome to CRACKL"><div class="sticker one">CRACK<br>IT!</div><div class="sticker two">SQUISH<br>IT!</div><div class="hero-inner"><img class="hero-logo" src="crackl_kawaii%20logo3.png" alt="CRACKL — Crack. Reveal. Squish."><p class="hero-subtitle">CRACK THE OUTSIDE. SQUISH THE INSIDE.</p></div><div class="hero-bottom"><p>DISCOVER THE COLLECTION</p><a class="down" href="#collection" aria-label="Explore the CRACKL collection">↓</a></div></section>
+<main><section class="hero" aria-label="Welcome to CRACKL"><div class="hero-inner"><img class="hero-logo" src="crackl_kawaii%20logo3.png" alt="CRACKL — Crack. Reveal. Squish."><div class="hero-art"><img src="crackl-hero.png" alt="CRACKL pink crackable shell revealing a cute squishy character" onload="this.parentElement.classList.add('loaded')" onerror="this.remove()"></div></div><div class="hero-bottom"><p>DISCOVER THE COLLECTION</p><a class="down" href="#collection" aria-label="Explore the CRACKL collection">↓</a></div></section>
 
 
 <section class="collection" id="collection"><div class="collection-heading"><div><span class="kicker" style="color:#fff">THE CRACKL RANGE</span><h2>MEET THE<br>COLLECTION</h2></div><p>Explore the full CRACKL range, from squishy surprises to make-your-own kits.</p></div><div class="filters" role="group" aria-label="Filter products"><button class="filter" data-filter="all" aria-pressed="true">ALL THE FUN</button><button class="filter" data-filter="sensory" aria-pressed="false">CRACK & SQUISH</button><button class="filter" data-filter="kit" aria-pressed="false">CREATE YOUR OWN</button></div><div class="product-grid" id="products"></div></section>
